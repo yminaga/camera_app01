@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 水平方向の中央揃え */
+    align-items: center;
+    /* 垂直方向の中央揃え */
+    height: 100vh;
+    /* ビューポートの高さ */
+}
+
+img {
+    width: 80%;
+    /* 画像の幅を画面の80%に */
+    max-width: 100%;
+    /* 画像が画面を超えないようにする */
+    /* 追加のスタイルで画像をさらに調整可能 */
+}
+
+/* ボタンの基本スタイル */
+.button-style {
+    padding: 10px 20px;
+    /* パディング */
+    font-size: 16px;
+    /* フォントサイズ */
+    color: white;
+    /* テキスト色 */
+    background-color: #007BFF;
+    /* 背景色 */
+    border: none;
+    /* ボーダー削除 */
+    border-radius: 5px;
+    /* 角の丸み */
+    cursor: pointer;
+    /* カーソルをポインタに */
+    outline: none;
+    /* アウトライン削除 */
+    transition: background-color 0.3s, transform 0.2s;
+    /* トランジション効果 */
+}
+
+/* ホバー時のスタイル */
+.button-style:hover {
+    background-color: #0056b3;
+    /* 背景色の変更 */
+    transform: scale(1.05);
+    /* 少し大きくする */
+}
+
+/* ファイル選択ボタンのスタイル隠し */
+#picture {
+    opacity: 0;
+    /* 完全に透明 */
+    position: absolute;
+    /* 位置指定 */
+    z-index: -1;
+    /* 背面に配置 */
+}
+
+/* ラベルをボタンとして使用 */
+label {
+    cursor: pointer;
+    /* カーソルをポインタに */
+    display: inline-block;
+    /* ブロック要素として表示 */
+}

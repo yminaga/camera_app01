@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>サイトタイトル</title>
+    <meta name="description" content="サイトの概要を記載">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <label for="picture" class="button-style">ファイルを選択</label>
+        
+        <input type="file" id="picture" name="picture" accept="image/*">
+        <!-- 
+        <img id="image" style="display: none;">
+        -->
+    </div>
+    <!-- ポップアップ表示用のコンテナ -->
+    <div id="popup-container"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:1000;">
+        <div
+            style="position:relative; max-width:80%; max-height:80%; box-shadow:0 4px 8px rgba(0,0,0,0.2); background:#fff; padding:20px; box-sizing:border-box; overflow:auto;">
+            <img id="popup-image" src=""
+                style="width:auto; max-width:100%; max-height:80vh; display:block; margin:auto;">
+            <button id="close-popup" style="position:absolute; top:10px; right:10px;">閉じる</button>
+            <button id="download-image" style="position:absolute; bottom:10px; right:10px;">ダウンロード</button>
+            <div id="long-press-instruction" style="display:none; text-align:center; padding:10px;">
+                画像を長押しして「写真に追加」を選択して保存してください。
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
