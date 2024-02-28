@@ -103,4 +103,3 @@ document.getElementById("download-image").addEventListener("click", function() {
     };
 });
 */
-
